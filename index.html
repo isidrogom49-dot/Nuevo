@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Equipo de Ingeniería</title>
+<title>Engineering Team</title>
+<meta name="description" content="Engineering Team innovating systems with a gourmet touch.">
 
-<!-- FUENTES -->
+<!-- FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
 
 <!-- CSS -->
@@ -16,30 +17,31 @@
 
 <!-- LOADER -->
 <div id="loader">
-    <h1>Equipo de Ingeniería</h1>
+    <h1>Engineering Team</h1>
     <div class="loader-dots">
         <span></span><span></span><span></span>
     </div>
 </div>
 
-<!-- BOTÓN PRINCIPAL -->
+<!-- DYNAMIC GREETING + MAIN BUTTON -->
 <button class="btn" id="openBtn">See Presentation</button>
 
-<!-- BANNER DE PLATILLO GOURMET -->
+<!-- MAIN BANNER IMAGE -->
 <div class="banner">
-    <img id="bannerImg" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80" alt="Platillo gourmet">
+    <img id="bannerImg" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80" alt="Gourmet Dish">
 </div>
 
 <!-- MODAL -->
-<div id="modal" class="modal">
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="modal-content">
 
-        <span class="close" id="closeBtn">&times;</span>
+        <span class="close" id="closeBtn" role="button" aria-label="Close modal">&times;</span>
 
         <p class="mini">QuickMenu</p>
         <h2 class="title">Engineering Team</h2>
-        <p class="subtitle">Innovating Systems with a Gourmet Edge.</p>
+        <p class="subtitle">Innovating systems with a gourmet touch.</p>
 
+        <!-- TEAM MEMBERS BANNER -->
         <div class="team">
             <div class="member">
                 <img src="1.png" alt="Luis Guillermo Martínez Ponce">
@@ -59,8 +61,10 @@
             </div>
         </div>
 
-        <!-- BOTÓN VER MENÚ -->
-        <a href="menu.html" class="btn menu-btn">See menu</a>
+        <!-- BUTTON TO GO TO MENU -->
+        <div class="team-menu-btn">
+            <a href="menu.html" class="btn menu-btn">See Menu</a>
+        </div>
 
     </div>
 </div>
